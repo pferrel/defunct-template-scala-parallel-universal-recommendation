@@ -26,7 +26,7 @@ Near future
 
 ##Architecture
 
-We follow the [lambda architectural model](http://en.wikipedia.org/wiki/Lambda_architecture) as embodies in the DASE archetecture and tool set. Streaming input comes through the PreditionIO SDKs (or optionally files), which is turned immediately into user history used to make near real time recommendations. The delay in creating this usable user history is minimal--on the order of a seconds. Recommendations are returned in real time. The predictive models are calculated in the background based on all collected data and is updated as often as requested with no server downtime.
+We follow the [lambda architectural model](http://en.wikipedia.org/wiki/Lambda_architecture) as embodies in the DASE architecture and tool set. Streaming input comes through the PreditionIO SDKs (or optionally files), which is turned immediately into user history used to make near real time recommendations. The delay in creating this usable user history is minimal--on the order of a seconds. Recommendations are returned in real time. The predictive models are calculated in the background based on all collected data and is updated as often as requested with no server downtime.
 
 The actual components of the architecture are chosen for their speed, reliability, scalability, and high-level of support. They are the at the forefront in their class:
 
